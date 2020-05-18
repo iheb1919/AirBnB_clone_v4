@@ -44,8 +44,14 @@ $(document).ready(function () {
       }
     }
   });
-   // let dik = {};
-   // $('button').click(function () {
-//	du
-  //  )
+    $('button').click(function () {
+	$.ajax({
+	    url: 'http://0.0.0.0:5001/api/v1/places_search',
+	    type: 'POST',
+	    data: JSON.stringify(dict)
+	    contentType: 'application/json',
+	    success: function (data) {
+		$('section.places').html('');
+	    }}
+	     )
 });
