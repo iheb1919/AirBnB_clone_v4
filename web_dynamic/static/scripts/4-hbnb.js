@@ -51,7 +51,7 @@ $(document).ready(function () {
 	    data: JSON.stringify(dict)
 	    contentType: 'application/json',
 	    success: function (data) {
-		$('section.places').html('');
+
 	    }}
 	     )
 });
