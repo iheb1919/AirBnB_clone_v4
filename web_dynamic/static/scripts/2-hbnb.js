@@ -12,8 +12,7 @@ $(document).ready(function () {
     }
     $('.amenities h4').text(list.join(', '));
   });
-});
-const apiUrl = 'http://0.0.0.0:5001/api/v1/status/';
+  const apiUrl = 'http://0.0.0.0:5001/api/v1/status/';
   $.get(apiUrl, function (resp) {
     if (resp.status === 'OK') {
       $('#api_status').addClass('available');
